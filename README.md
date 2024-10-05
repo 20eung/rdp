@@ -13,3 +13,16 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp]
 "PortNumber"=dword:00000d73
 ```
+
+## Window Service Restart
+
+### 1. CMD
+```cmd
+net stop TermService
+net start TermService
+```
+
+### 2. PowerShell
+```powershell
+Restart-Service -Name TermService -Force
+```
