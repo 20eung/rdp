@@ -3,7 +3,27 @@ RDP Port Change
 
 3389 -> 3443
 
-## File Name: RDP.reg
+## File Name: RDP3389.reg
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds\tcp]
+"PortNumber"=dword:00000d3d
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp]
+"PortNumber"=dword:00000d3d
+```
+## File Name: RDP443.reg
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds\tcp]
+"PortNumber"=dword:000001bb
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp]
+"PortNumber"=dword:000001bb
+```
+## File Name: RDP3443.reg
 
 ```
 Windows Registry Editor Version 5.00
